@@ -31,9 +31,7 @@ class _TextFieldExampleState extends State<TextFieldExample> {
             onChanged: (String value) => this.value = value,
           ),
           ElevatedButton(
-            onPressed: () {
-              request(value);
-            },
+            onPressed: () => request(value),
             child: const Text("Send"),
           ),
         ],
